@@ -1,0 +1,178 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    color: #6b7280;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .subtitle {
+    text-align: center;
+    color: #9ca3af;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #8b5cf6;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .commentsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .commentItem {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .commentItem::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #fbbf24, #f59e0b, #d97706);
+  }
+  
+  .commentItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: #fbbf24;
+  }
+  
+  .commentItem:nth-child(even)::before {
+    background: linear-gradient(90deg, #8b5cf6, #7c3aed, #6d28d9);
+  }
+  
+  .commentItem:nth-child(3n)::before {
+    background: linear-gradient(90deg, #10b981, #059669, #047857);
+  }
+  
+  .commentItem:nth-child(4n)::before {
+    background: linear-gradient(90deg, #f472b6, #ec4899, #db2777);
+  }
+  
+  .commentField {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+  }
+  
+  .commentField:last-child {
+    margin-bottom: 0;
+  }
+  
+  .fieldLabel {
+    font-weight: 600;
+    color: #374151;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .fieldValue {
+    color: #6b7280;
+    margin: 0;
+    font-size: 0.95rem;
+  }
+  
+  .idField {
+    display: inline-block;
+    background: #ddd6fe;
+    color: #7c3aed;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+  
+  .postIdField {
+    display: inline-block;
+    background: #fef3c7;
+    color: #d97706;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.85rem;
+  }
+  
+  .emailField {
+    color: #059669;
+    font-weight: 500;
+  }
+  
+  .commentBody {
+    background: #f8fafc;
+    padding: 1rem;
+    border-radius: 12px;
+    border-left: 4px solid #e2e8f0;
+    font-style: italic;
+    color: #475569;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+  }
+  
+  .errorMessage {
+    text-align: center;
+    color: #dc2626;
+    font-size: 1.1rem;
+    padding: 1.5rem;
+    background: #fef2f2;
+    border: 2px solid #fecaca;
+    border-radius: 15px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .divider {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+    
+    .commentsList {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    .title {
+      font-size: 2rem;
+    }
+    
+    .commentItem {
+      padding: 1rem;
+    }
+  }
