@@ -1,0 +1,236 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    color: #64748b;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f8b4b4 0%, #f1a3a3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .searchContainer {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    margin-bottom: 3rem;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+  }
+  
+  .searchContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #fbb6ce, #f9a8d4, #f472b6);
+  }
+  
+  .inputGroup {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 15px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: rgba(249, 250, 251, 0.8);
+    color: #6b7280;
+  }
+  
+  .input:focus {
+    outline: none;
+    border-color: #fbb6ce;
+    box-shadow: 0 0 0 3px rgba(251, 182, 206, 0.2);
+    background: white;
+  }
+  
+  .button {
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #fbb6ce 0%, #f9a8d4 100%);
+    color: #7c2d12;
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(251, 182, 206, 0.3);
+    white-space: nowrap;
+  }
+  
+  .button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(251, 182, 206, 0.4);
+    background: linear-gradient(135deg, #f9a8d4 0%, #f472b6 100%);
+  }
+  
+  .button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .commentContainer {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .commentContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #a7f3d0, #6ee7b7, #34d399);
+  }
+  
+  .commentTitle {
+    color: #64748b;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .commentField {
+    margin-bottom: 1rem;
+  }
+  
+  .commentField:last-of-type {
+    margin-bottom: 1.5rem;
+  }
+  
+  .fieldLabel {
+    font-weight: 600;
+    color: #64748b;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.3rem;
+    display: block;
+  }
+  
+  .fieldValue {
+    color: #94a3b8;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.5rem 0;
+  }
+  
+  .commentBody {
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    padding: 1rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #a16207;
+    border-left: 4px solid #fbbf24;
+    margin: 0;
+  }
+  
+  .deleteButton {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #fbb6ce 0%, #f9a8d4 100%);
+    color: #7c2d12;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(251, 182, 206, 0.3);
+  }
+  
+  .deleteButton:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(251, 182, 206, 0.4);
+    background: linear-gradient(135deg, #f9a8d4 0%, #f472b6 100%);
+  }
+  
+  .deleteButton:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  .error {
+    text-align: center;
+    color: #e11d48;
+    font-size: 1.1rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
+    border: 2px solid #fbcfe8;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .success {
+    text-align: center;
+    color: #059669;
+    font-size: 1.1rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+    border: 2px solid #a7f3d0;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+    
+    .title {
+      font-size: 2rem;
+    }
+    
+    .searchContainer,
+    .commentContainer {
+      padding: 1.5rem;
+    }
+    
+    .inputGroup {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .button {
+      width: 100%;
+    }
+  }
