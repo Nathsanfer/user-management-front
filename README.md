@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 👥 User Management Front
 
-## Getting Started
+Uma aplicação moderna e intuitiva para gerenciamento de usuários, desenvolvida com Next.js e JavaScript puro.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square)
+![React](https://img.shields.io/badge/React-18-blue?style=flat-square)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-yellow?style=flat-square)
+
+---
+
+## 📋 Sobre
+
+- **Gerenciamento de usuários** - Crie, leia, atualize e delete usuários
+- **Interface limpa** - Design responsivo e amigável
+- **Roteamento dinâmico** - Navegação fluida com Next.js App Router
+- **Pronto para produção** - Estrutura escalável e bem organizada
+
+---
+
+## ✨ Funcionalidades
+
+- ✅ Listar todos os usuários
+- ✅ Visualizar detalhes de um usuário específico
+- ✅ Criar novo usuário
+- ✅ Editar informações do usuário
+- ✅ Deletar usuário
+- ✅ Interface responsiva
+- ✅ Navegação intuitiva
+
+---
+
+## 🛠️ Requisitos
+
+- Node.js 18.0 ou superior
+- npm, yarn, pnpm ou bun
+
+---
+
+## 🚀 Instalação e Uso
+
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/seu-usuario/user-management-front.git
+cd user-management-front
+```
+
+### 2. Instalar dependências
+
+```bash
+npm install
+```
+
+### 3. Executar em desenvolvimento
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver a aplicação.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 4. Build para produção
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Estrutura do Projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/
+│   ├── layout.js              # Layout principal
+│   ├── page.jsx               # Página inicial
+│   ├── globals.css            # Estilos globais
+│   ├── get/                   # Página de listagem/detalhes
+│   │   └── [id]/              # Detalhes de usuário específico
+│   ├── post/                  # Página de criar usuário
+│   ├── put/                   # Página de editar usuário
+│   └── delete/                # Página de deletar usuário
+├── public/                    # Arquivos estáticos
+└── ...
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🔧 Tecnologias Utilizadas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **[Next.js](https://nextjs.org)** - Framework React com renderização no servidor
+- **[React](https://react.dev)** - Biblioteca para interface de usuário
+- **[JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)** - Linguagem de programação
+- **CSS Modules** - Estilos encapsulados e reutilizáveis
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📚 Aprender Mais
+
+- [Documentação do Next.js](https://nextjs.org/docs) - Recursos e funcionalidades
+- [Learn Next.js](https://nextjs.org/learn) - Tutorial interativo
+- [React Docs](https://react.dev) - Documentação oficial React
