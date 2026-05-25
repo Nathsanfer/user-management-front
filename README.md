@@ -17,6 +17,12 @@ Uma aplicação moderna e intuitiva para gerenciamento de usuários, desenvolvid
 
 ---
 
+## 🎥 Demonstração
+
+https://github.com/user-attachments/assets/3e05613b-68f1-450d-8135-45ef5802eb24
+
+---
+
 ## ✨ Funcionalidades
 
 - ✅ Listar todos os usuários
